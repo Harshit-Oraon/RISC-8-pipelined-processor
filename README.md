@@ -64,5 +64,7 @@ The processor adopts a **5-stage pipeline architecture** with **hazard detection
 - 🧮 **Post-layout verification with zero DRC violations**
 
 ---
-
-## 🧩 Repository Contents
+### 🧑‍💻 Author
+**HARSHIT ORAON**  
+Department of Electronics and Communication Engineering   
+📅 *November 2025*
