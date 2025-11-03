@@ -74,21 +74,77 @@ This dual implementation validates a **fully functional and optimized processor*
 ## 💻 FPGA Implementation
 
 ### 🔹 Flow
-1. **Design Entry:** Verilog HDL  
-2. **Simulation:** Behavioral verification in Vivado/ModelSim  
-3. **Synthesis & Implementation:** Using Xilinx Vivado  
-4. **Bitstream Generation:** Output `.bit` file for FPGA  
-5. **Hardware Testing:** Functional verification on FPGA board  
+1. **Design Entry:** Implemented using **Verilog HDL** in *Xilinx Vivado*  
+2. **Simulation:** Verified functionality through **behavioral simulation** using *Vivado Simulator* and *ModelSim*  
+3. **Synthesis & Implementation:** Performed using *Xilinx Artix-7 FPGA* on Vivado  
+4. **Bitstream Generation:** Generated the `.bit` file for FPGA configuration  
+5. **Hardware Testing:** Programmed onto the FPGA board and verified using on-board I/O devices  
+
+---
 
 ### 🔹 Example Hardware Setup
-- **Board Used:** Basys3 / Nexys A7 (Artix-7 FPGA)  
-- **Clock:** 50 MHz onboard oscillator  
-- **Inputs/Outputs:** Switches for opcodes, LEDs for results  
+- **Board Used:** Basys 3 / Nexys A7 (Artix-7 FPGA)  
+- **Clock Source:** 50 MHz onboard oscillator  
+- **Inputs:** Switches used to load instructions or input data  
+- **Outputs:** LEDs used to visualize ALU results or register outputs  
 
-<p align="center">
-  <img src="images/waveform.png" width="80%" alt="Simulation Waveform">
-  <br><em>Simulation output in Vivado showing pipeline operation</em>
-</p>
+---
+
+### 🔹 Special Design Features
+
+#### 🧠 Block Memory (BRAM)
+Used for **instruction and data memory** instead of distributed LUT RAM.  
+This approach provides:
+- Faster and more efficient memory access  
+- Reduced LUT utilization  
+- Realistic processor memory behavior inside the FPGA  
+
+#### 🔍 Integrated Logic Analyzer (ILA)
+The **ILA core** was integrated to perform real-time debugging inside the FPGA.  
+It allowed monitoring of:
+- Internal pipeline signals  
+- Register updates  
+- Control and hazard signals  
+
+This method eliminated the need for external logic analyzers and made debugging seamless.
+
+#### ⚙️ Pipeline Verification
+Each pipeline stage (**IF**, **ID**, **EX**, **MEM**, **WB**) was verified both in simulation and on hardware using ILA captures.  
+This confirmed the correct instruction flow, hazard handling, and data forwarding.
+
+---
+
+### 🧩 Summary
+This FPGA implementation demonstrates a **fully functional 8-bit pipelined RISC processor**, designed and tested from RTL to real hardware.  
+By using **BRAM** for memory and **ILA** for signal tracing, the design achieves:
+- High efficiency  
+- Real-time visibility  
+- Reliable verification from simulation to FPGA hardware  
+
+---
+
+### 📸 Project Images and Results
+
+#### 🔷 Block Diagram / Schematic
+> *(Attach your schematic or architecture image here)*  
+![Block Diagram](images/fpga_block_diagram.png)
+
+#### 🔷 Simulation Waveform
+> *(Attach behavioral or post-implementation simulation result)*  
+![Simulation Waveform](images/fpga_waveform.png)
+
+#### 🔷 Device Utilization Report
+> *(Attach screenshot of synthesis utilization report)*  
+![Device Utilization](images/device_utilization.png)
+
+#### 🔷 Timing Summary
+> *(Attach timing analysis result or screenshot from Vivado)*  
+![Timing Report](images/timing_report.png)
+
+---
+
+📁 *All related images and reports should be placed inside the* `images/` *folder.*
+
 
 ---
 
