@@ -1,4 +1,4 @@
-<h1 align="center">🧠 Semi-Custom VLSI Design and Implementation of 8-bit Pipelined RISC Processor</h1>
+<h1 align="center">🧠 Design and Implementation of 8-bit Pipelined RISC Processor</h1>
 
 <p align="center">
   <img src="Screenshot-from-2025-11-01-17-19-13.jpg" width="80%" alt="Processor Layout"/><br>
