@@ -125,13 +125,12 @@ By using **BRAM** for memory and **ILA** for signal tracing, the design achieves
 
 ### 📸 Project Images and Results
 
-#### 🔷 Block Diagram / Schematic
->   
+#### 🔷 Block Diagram / Schematic 
 ![Block Diagram](FPGA-Implementation/Output/schemetic.png)
 
-#### 🔷 Simulation Waveform
-> *(Attach behavioral or post-implementation simulation result)*  
-![Simulation Waveform](images/fpga_waveform.png)
+#### 🔷 Simulation Waveform 
+![Simulation Waveform](FPGA-Implementation/Output/zedbordoutput01.png)
+![Simulation Waveform](FPGA-Implementation/Output/zedbordoutput02.png)
 
 #### 🔷 Device Utilization Report
 > *(Attach screenshot of synthesis utilization report)*  
