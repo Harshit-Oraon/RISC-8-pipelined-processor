@@ -126,8 +126,8 @@ By using **BRAM** for memory and **ILA** for signal tracing, the design achieves
 ### 📸 Project Images and Results
 
 #### 🔷 Block Diagram / Schematic
-> *(Attach your schematic or architecture image here)*  
-![Block Diagram](images/fpga_block_diagram.png)
+>   
+![Block Diagram](FPGA-Implementation/Output/schemetic.png)
 
 #### 🔷 Simulation Waveform
 > *(Attach behavioral or post-implementation simulation result)*  
