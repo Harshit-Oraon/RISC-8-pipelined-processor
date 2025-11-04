@@ -577,6 +577,7 @@ TEST COMPLETED
 
 #### 🔷 Device View (Physical Layout)
 ![Device View](FPGA-Implementation/Output/devics.png)
+
 *Figure: Vivado device view showing physical placement of logic on XC7Z020 die*
 
 **Layout Highlights**:
