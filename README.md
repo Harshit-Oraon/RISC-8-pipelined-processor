@@ -143,10 +143,6 @@ By using **BRAM** for memory and **ILA** for signal tracing, the design achieves
 
 ---
 
-📁 *All related images and reports should be placed inside the* `images/` *folder.*
-
-
----
 
 ## ⚡ VLSI Semi-Custom Design Flow
 
@@ -205,9 +201,8 @@ By using **BRAM** for memory and **ILA** for signal tracing, the design achieves
 ---
 
 ## 🧑‍💻 Author
-**Your Name**  
-Department of Electronics and Communication Engineering  
-**Your Institution Name**  
+**Harshit Oraon**  
+Department of Electronics and Communication Engineering   
 📅 *November 2025*
 
 <p align="center">
