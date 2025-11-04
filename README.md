@@ -132,13 +132,14 @@ By using **BRAM** for memory and **ILA** for signal tracing, the design achieves
 ![Simulation Waveform](FPGA-Implementation/Output/zedbordoutput01.png)
 ![Simulation Waveform](FPGA-Implementation/Output/zedbordoutput02.png)
 
-#### 🔷 Device Utilization Report
+#### 🔷 Device Utilization pic
 ![Device](FPGA-Implementation/Output/devics.png)
 #### 🔷 Device Utilization Report
-![Device](FPGA-Implementation/Output/devics.png)
+![Device ](FPGA-Implementation/Report_Output/utilization_post_implementaion.png)
 #### 🔷 Timing Summary
-> *(Attach timing analysis result or screenshot from Vivado)*  
-![Timing Report](images/timing_report.png)
+![Timing Report](FPGA-Implementation/Report_Output/timing_repot.png)
+#### 🔷 Power Summary
+![Timing Report](FPGA-Implementation/Report_Output/power_report.png)
 
 ---
 
