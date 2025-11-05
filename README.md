@@ -1495,13 +1495,13 @@ floorPlan -site core -r 1.0 0.7 10 10 10 10
 #### R-Type (Register)
 ```
 |  Opcode  |   Rs1   |   Rs2   |   Rd    |
-|  [7:6]   |  [5:4]  |  [3:2]  |  [1:0]  |
+|  [15:12]   |  [11:9]  |  [8:6]  |  [5:0]  |
 ```
 
 #### I-Type (Immediate)
 ```
 |  Opcode  |   Rs    |   Rd    | Imm/Addr |
-|  [7:6]   |  [5:4]  |  [3:2]  |   [1:0]  |
+|  [15:12]   |  [11:9]  |  [8:6]  |   [5:0]  |
 ```
 
 ### Instruction Set
