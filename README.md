@@ -35,6 +35,7 @@
 - [Contributing](#-contributing)
 - [License](#-license)
 - [Author](#-author)
+- [References](#-reference)
 
 ---
 
@@ -2111,6 +2112,16 @@ Indian Institute of Information Technology, Design and Manufacturing, Kurnool
 - 💼 LinkedIn: [linkedin.com/in/harshitoraon](www.linkedin.com/in/harshit-oraon)
 - 🐙 GitHub: [@harshitoraon](https://github.com/Harshit-oraon)
 
+---
+## References
+
+1. Patil, A.S., & Shivaleelavathi, B.G. (2017). Design and Implementation of Pipelined 8-Bit RISC Processor using Verilog HDL on FPGA. *International Research Journal of Engineering and Technology (IRJET)*, 4(6), 1753-1758. [https://www.irjet.net/archives/V4/i6/IRJET-V4I6567.pdf](https://www.irjet.net/archives/V4/i6/IRJET-V4I6567.pdf)
+
+2. Uma, R. (2012). Design and Performance Analysis of 8-bit RISC Processor using Xilinx Tool. *International Journal of Engineering Research and Applications (IJERA)*, 2(2), 53-58. [https://www.ijera.com/papers/Vol2_issue2/H22053058.pdf](https://www.ijera.com/papers/Vol2_issue2/H22053058.pdf)
+
+3. Bharadwaja, P.V.S.R., Ravi Teja, K., Naresh Babu, M., & Neelima, K. (2019). Simulation and Analysis of 6-stage pipelined RISC processor. *JETIR*, February 2019. [https://www.jetir.org/papers/JETIR1902006.pdf](https://www.jetir.org/papers/JETIR1902006.pdf)
+
+4. Mamun, B., Shabiul, I., & Sulaiman, S. (2013). Design Of 16-bit RISC Processor. *International Journal of Engineering Research & Technology (IJERT)*, 2(7), 828-832. [https://www.ijert.org/research/design-of-16-bit-risc-processor-IJERTV2IS70828.pdf](https://www.ijert.org/research/design-of-16-bit-risc-processor-IJERTV2IS70828.pdf)
 ---
 
 ## ⭐ Show Your Support
