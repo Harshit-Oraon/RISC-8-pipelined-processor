@@ -31,9 +31,7 @@
 - [Performance Comparison](#-performance-comparison)
 - [Results and Analysis](#-results-and-analysis)
 - [Getting Started](#-getting-started)
-- [Project Structure](#-project-structure)
 - [Future Enhancements](#-future-enhancements)
-- [Documentation](#-documentation)
 - [Contributing](#-contributing)
 - [License](#-license)
 - [Author](#-author)
@@ -1329,13 +1327,16 @@ Fix Applied:
 
 #### Final GDS-II Layout
 ![GDS Layout](Cadence_SemiCustom/images/layout01.png)
+
 *Figure: Complete tape-out ready layout with all 6 metal layers visible*
 
 #### Timing Analysis View
 ![Timing Paths](Cadence_SemiCustom/images/setuptime_bc.png)
+
 *Figure: Critical path visualization showing 15.558ns setup slack*
 
 ![Timing Paths](Cadence_SemiCustom/images/holdtime_wc.png)
+
 *Figure: Critical path visualization showing -0.156ns hold slack*
 
 ### 📊 Post-Layout vs Pre-Layout Comparison
@@ -1941,119 +1942,6 @@ endcase
 // 3. Update testbench
 ```
 
----
-
-## 📁 Project Structure
-
-```
-8bit-risc-processor/
-├── README.md                          # This file
-├── LICENSE                            # MIT License
-│
-├── RTL/                               # Verilog source files
-│   ├── processor_top.v                # Top-level module
-│   ├── pipeline_stages/
-│   │   ├── instruction_fetch.v        # IF stage
-│   │   ├── instruction_decode.v       # ID stage
-│   │   ├── execute.v                  # EX stage
-│   │   ├── memory_access.v            # MEM stage
-│   │   └── write_back.v               # WB stage
-│   ├── components/
-│   │   ├── register_file.v            # 8×8 register file
-│   │   ├── alu.v                      # Arithmetic Logic Unit
-│   │   ├── control_unit.v             # Control signal generator
-│   │   ├── hazard_detection.v         # Hazard detection unit
-│   │   └── forwarding_unit.v          # Data forwarding logic
-│   ├── memory/
-│   │   ├── instruction_memory.v       # Program memory
-│   │   └── data_memory.v              # Data RAM
-│   └── utils/
-│       ├── pipeline_registers.v       # Inter-stage registers
-│       └── processor_pkg.vh           # Package definitions
-│
-├── FPGA-Implementation/
-│   ├── processor.xpr                  # Vivado project file
-│   ├── constraints/
-│   │   └── zedboard.xdc               # Pin constraints
-│   ├── ip/
-│   │   ├── bram_instruction.xci       # Instruction BRAM IP
-│   │   ├── bram_data.xci              # Data BRAM IP
-│   │   └── ila_core.xci               # ILA debugging IP
-│   ├── scripts/
-│   │   ├── run_fpga.tcl               # Automated flow script
-│   │   └── program_board.tcl          # Board programming
-│   ├── Output/
-│   │   ├── schemetic.png              # RTL schematic
-│   │   ├── zedbordoutput01.png        # Simulation waveform
-│   │   ├── zedbordoutput02.png        # ILA capture
-│   │   └── devics.png                 # Device view
-│   └── Report_Output/
-│       ├── utilization_post_implementaion.png
-│       ├── timing_repot.png
-│       └── power_report.png
-│
-├── VLSI-Implementation/
-│   ├── synthesis/
-│   │   ├── synthesis.tcl              # Genus script
-│   │   ├── constraints.sdc            # Timing constraints
-│   │   └── reports/
-│   │       ├── area.rpt
-│   │       ├── timing.rpt
-│   │       └── power.rpt
-│   ├── pnr/
-│   │   ├── floorplan.tcl              # Floor planning
-│   │   ├── placement.tcl              # Cell placement
-│   │   ├── cts.tcl                    # Clock tree synthesis
-│   │   ├── routing.tcl                # Signal routing
-│   │   └── pnr.tcl                    # Complete P&R flow
-│   ├── verification/
-│   │   ├── drc.tcl                    # DRC check script
-│   │   ├── lvs.tcl                    # LVS verification
-│   │   └── antenna.tcl                # Antenna check
-│   ├── outputs/
-│   │   ├── processor.gds              # GDS-II layout file
-│   │   ├── processor.def              # DEF file
-│   │   └── processor.lef              # LEF file
-│   └── reports/
-│       ├── final_timing.rpt
-│       ├── final_power.rpt
-│       └── final_area.rpt
-│
-├── testbench/
-│   ├── processor_tb.v                 # Main testbench
-│   ├── test_programs/
-│   │   ├── test_arithmetic.asm        # Arithmetic tests
-│   │   ├── test_load_store.asm        # Memory tests
-│   │   ├── test_branch.asm            # Branch tests
-│   │   └── test_hazards.asm           # Hazard tests
-│   ├── generate_tests.py              # Python test generator
-│   ├── Makefile                       # Simulation automation
-│   └── results/
-│       └── waveforms/
-│
-├── images/                            # Documentation images
-│   ├── architecture.png               # Architecture diagram
-│   └── layout.png                     # VLSI layout
-│
-├── report/                            # Project documentation
-│   ├── report.tex                     # LaTeX source
-│   ├── Project_Report.pdf             # Complete report
-│   └── references.bib                 # Bibliography
-│
-├── docs/                              # Additional documentation
-│   ├── ISA_Specification.md           # Instruction set
-│   ├── Pipeline_Design.md             # Pipeline details
-│   ├── Hazard_Handling.md             # Hazard mechanisms
-│   └── User_Manual.md                 # User guide
-│
-└── scripts/                           # Utility scripts
-    ├── assembly_to_machine.py         # Assembler
-    ├── memory_init_generator.py       # COE/MEM file generator
-    └── result_analyzer.py             # Performance analysis
-```
-
----
-
 ## 🔮 Future Enhancements
 
 ### Short-term Goals
@@ -2089,17 +1977,6 @@ endcase
 
 ---
 
-## 📚 Documentation
-
-### Available Documents
-
-| Document | Description | Location |
-|----------|-------------|----------|
-| **Project Report** | Complete technical report (50+ pages) | [report/Project_Report.pdf](report/Project_Report.pdf) |
-| **ISA Manual** | Instruction set architecture specification | [docs/ISA_Specification.md](docs/ISA_Specification.md) |
-| **User Guide** | How to use and modify the processor | [docs/User_Manual.md](docs/User_Manual.md) |
-| **Design Document** | Detailed architecture and implementation | [docs/Pipeline_Design.md](docs/Pipeline_Design.md) |
-| **Testbench Guide** | Verification methodology | [testbench/README.md](testbench/README.md) |
 
 ### Key Sections in Report
 1. **Introduction** - Project motivation and objectives
@@ -2130,7 +2007,7 @@ Contributions are welcome! Whether you want to:
 
 1. **Fork the repository**
 ```bash
-git clone https://github.com/yourusername/8bit-risc-processor.git
+git clone https://github.com/Harshit-Oraon/8bit-risc-processor.git
 cd 8bit-risc-processor
 git checkout -b feature/your-feature-name
 ```
@@ -2218,21 +2095,21 @@ If you use this project in academic work, please cite:
 - **Xilinx** for Vivado Design Suite and ZedBoard
 - **Cadence** for digital design tools
 - **TSMC** for 180nm PDK (academic license)
-- **Open-source community** for inspiration and resources
+- **C2S Program** for inspiration and resources
 - **Faculty advisors** for guidance and support
-- **Department of ECE** for providing infrastructure
+- **Department of ECE(IIITDM KURNOOL)** for providing infrastructure
 
 ---
 
-## 📞 Contact
+## Author
 
 **Harshit Oraon**  
-Department of Electronics and Communication Engineering  
+Department of Electronics and Communication Engineering
+Indian Institute of Information Technology, Design and Manufacturing, Kurnool
 
-- 📧 Email: harshit.oraon@example.com
-- 💼 LinkedIn: [linkedin.com/in/harshitoraon](https://linkedin.com/in/harshitoraon)
-- 🐙 GitHub: [@harshitoraon](https://github.com/harshitoraon)
-- 🌐 Website: [harshitoraon.dev](https://harshitoraon.dev)
+- 📧 Email: harshitoraon0027@gmail.com
+- 💼 LinkedIn: [linkedin.com/in/harshitoraon](www.linkedin.com/in/harshit-oraon)
+- 🐙 GitHub: [@harshitoraon](https://github.com/Harshit-oraon)
 
 ---
 
@@ -2249,8 +2126,8 @@ If you found this project helpful or interesting:
 <p align="center">
   <strong>🚀 From RTL to Silicon: A Complete Digital Design Journey</strong><br><br>
   <em>"Hardware is the foundation upon which all software stands."</em><br><br>
-  Made with ❤️ for the open-source hardware community<br>
-  📅 November 2025
+  Made with ❤️ for the C2S program community<br>
+  📅 September 2025 to November 2025
 </p>
 
 <p align="center">
