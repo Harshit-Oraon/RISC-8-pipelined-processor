@@ -9,7 +9,7 @@
 
 ![Made with Verilog](https://img.shields.io/badge/Made%20with-Verilog-blue)
 ![Tool-Vivado](https://img.shields.io/badge/Tool-Xilinx%20Vivado-orange)
-![Tool-Cadence](https://img.shields.io/badge/Tool-Cadence%20Genus%2FInnovus-red)
+![Tool-Cadence](https://img.shields.io/badge/Tool-Cadence%20NClunch%2FGenus%2FInnovus-red)
 ![TSMC 180nm](https://img.shields.io/badge/Technology-TSMC%20180nm-purple)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Status](https://img.shields.io/badge/Status-Complete-success)
@@ -34,6 +34,7 @@
 - [Future Enhancements](#-future-enhancements)
 - [Contributing](#-contributing)
 - [License](#-license)
+- [Acknowledgments](#-acknowledgments)
 - [Author](#-author)
 - [References](#-reference)
 
@@ -2065,30 +2066,6 @@ furnished to do so, subject to the following conditions:
 
 [Full license text in LICENSE file]
 ```
-
----
-
-## 🎓 Academic Use
-
-This project is suitable for:
-- **Undergraduate projects** in Computer Architecture
-- **Graduate research** in Digital Design
-- **VLSI coursework** and lab assignments
-- **FPGA workshops** and training programs
-- **Open-source hardware** education
-
-### Citation
-If you use this project in academic work, please cite:
-```bibtex
-@misc{oraon2025risc,
-  author = {Oraon, Harshit},
-  title = {8-bit Pipelined RISC Processor: FPGA and ASIC Implementation},
-  year = {2025},
-  publisher = {GitHub},
-  url = {https://github.com/yourusername/8bit-risc-processor}
-}
-```
-
 ---
 
 ## 🙏 Acknowledgments
@@ -2101,8 +2078,8 @@ If you use this project in academic work, please cite:
 - **Department of ECE(IIITDM KURNOOL)** for providing infrastructure
 
 ---
-
-## Author
+## 📝 Author
+---
 
 **Harshit Oraon**  
 Department of Electronics and Communication Engineering
@@ -2113,7 +2090,7 @@ Indian Institute of Information Technology, Design and Manufacturing, Kurnool
 - 🐙 GitHub: [@harshitoraon](https://github.com/Harshit-oraon)
 
 ---
-## References
+## 📚 References
 
 1. Patil, A.S., & Shivaleelavathi, B.G. (2017). Design and Implementation of Pipelined 8-Bit RISC Processor using Verilog HDL on FPGA. *International Research Journal of Engineering and Technology (IRJET)*, 4(6), 1753-1758. [https://www.irjet.net/archives/V4/i6/IRJET-V4I6567.pdf](https://www.irjet.net/archives/V4/i6/IRJET-V4I6567.pdf)
 
